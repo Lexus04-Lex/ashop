@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeController extends GetxController{
@@ -6,6 +5,7 @@ class HomeController extends GetxController{
 
   final carouselCurrentIndex = 0.obs;
 
-  void updatePageIndicator (){
+  void updatePageIndicator (index){
+    carouselCurrentIndex.value = index;
   }
 }

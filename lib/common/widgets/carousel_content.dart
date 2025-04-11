@@ -1,9 +1,7 @@
 import 'package:a_shop/utilis/constants/size.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 import '../../utilis/constants/colors.dart';
-import '../../utilis/constants/image_strings.dart';
 
 class CarouselContent extends StatelessWidget {
   final String imageUrl;
@@ -14,7 +12,7 @@ class CarouselContent extends StatelessWidget {
   final EdgeInsets? padding;
   final bool isNetworkImage;
   final VoidCallback? onPressed;
-  const CarouselContent({super.key, required this.imageUrl, this.width=200, this.applyImageRadius= false, this.border, this.fit, this.padding, required this.isNetworkImage, this.onPressed, this.height=200});
+  const CarouselContent({super.key, required this.imageUrl, this.width=200, this.applyImageRadius= false, this.border, this.fit, this.padding, this.isNetworkImage=false, this.onPressed, this.height=200});
 
   @override
   Widget build(BuildContext context) {

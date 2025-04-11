@@ -20,10 +20,10 @@ class PopularCategories extends StatelessWidget {
             children:[
               Container(
                 // color: AColors.white,
-            child: Text(ATexts.popularSearches,style: Theme.of(context).textTheme.headlineMedium!.apply(color:AColors.white), maxLines: 1, overflow: TextOverflow.ellipsis,),
+            child: Text(ATexts.homePopularProducts,style: Theme.of(context).textTheme.headlineMedium!.apply(color:dark?AColors.white:AColors.black), maxLines: 1, overflow: TextOverflow.ellipsis,),
           ),
               Container(
-                child: TextButton(onPressed: (){}, child: Text(ATexts.viewAll, style: Theme.of(context).textTheme.headlineMedium!.apply(color: AColors.white),)),
+                child: TextButton(onPressed: (){}, child: Text(ATexts.viewAll, style: Theme.of(context).textTheme.headlineMedium!.apply(color: AColors.black),)),
               )
         ],
     ),

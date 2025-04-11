@@ -97,8 +97,9 @@ class ALocalStorage {
     int size = 0;
     for (final key in keys) {
       final value = _storage.read(key);
-      if (value is String) size += value.length;
-      else if (value != null) size += value.toString().length;
+      if (value is String) {
+        size += value.length;
+      } else if (value != null) size += value.toString().length;
     }
     return size;
   }

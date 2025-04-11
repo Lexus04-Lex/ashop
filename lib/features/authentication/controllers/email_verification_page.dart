@@ -1,7 +1,6 @@
 import 'package:a_shop/features/authentication/controllers/email_verification_sucess.dart';
 import 'package:a_shop/utilis/constants/text_Strings.dart';
 import 'package:flutter/material.dart';
-import 'package:a_shop/utilis/constants/image_strings.dart';
 import 'package:get/get.dart';
 import '../../../utilis/constants/size.dart';
 

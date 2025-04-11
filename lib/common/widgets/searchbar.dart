@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 import '../../utilis/constants/colors.dart';
 import '../../utilis/constants/text_Strings.dart';
 class Searchbar extends StatelessWidget {
-  const Searchbar({super.key});
+  const  Searchbar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,21 +27,24 @@ class CustomSearchBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = AHelperFunctions.isDarkMode(context);
     return Container(
-      height: 70,
+      height: 40,
       width: ADeviceUtils.getScreenWidth(context),
-      padding: EdgeInsets.all(ASizes.defaultSpace),
+      padding: EdgeInsets.only(left:ASizes.defaultSpace),
       decoration: BoxDecoration(
-        color: dark? AColors.accent:AColors.accent,
+
+        color: dark? Colors.transparent:Colors.transparent,
         borderRadius: BorderRadius.circular(10),
           border: Border.all(color: AColors.grey)
       ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Icon(Icons.search, color: dark? AColors.dark: AColors.dark,),
-          SizedBox(width: ASizes.defaultSpace,),
-          Text(ATexts.search, style: TextStyle(color: dark? AColors.dark:AColors.dark, ) ),
-        ],
+      child: Expanded(
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(Icons.search, color: dark? AColors.dark: AColors.dark,),
+            SizedBox(width: ASizes.defaultSpace,),
+            Text(ATexts.search, style: TextStyle(color: dark? AColors.dark:AColors.dark, ) ),
+          ],
+        ),
       ),
     );
   }

@@ -4,7 +4,7 @@ class AImages {
 
   // -- App Logos
   static const String darkAppLogo = "assets/logos/a_splash_native_screen_delivery_dark.jpg";
-  static const String lightAppLogo = "assets/logos/a_splash_native_white.jpg";
+  static const String lightAppLogo = "assets/logos/a_splash_native_screen_white.png";
 
   // -- Social Logos
   static const String google = "assets/logos/google.png";
@@ -19,7 +19,7 @@ class AImages {
 //Testing images
   static const String popularImage1 = "assets/images/image1.png";
   static const String popularImage2 = "assets/images/image3.jpg";
-  static const String popularImage3 = "assets/images/image3.jpg";
+  static const String popularImage3 = "assets/images/image2.jpg";
   static const String popularImage4 = "assets/images/image4.jpg";
   static const String popularImage5 = "assets/images/image5.jpg";
   static const String popularImage6 = "assets/images/image6.jpg";

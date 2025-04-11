@@ -2,7 +2,6 @@ import 'package:a_shop/utilis/constants/size.dart';
 import 'package:flutter/material.dart';
 
 import '../../utilis/constants/colors.dart';
-import '../../utilis/constants/image_strings.dart';
 
 class PopularCategoriesData extends StatelessWidget {
   const PopularCategoriesData({super.key, required this.image, required this.title,this.textColor=AColors.white, this.backgroundColor, this.onTap});
@@ -30,7 +29,7 @@ class PopularCategoriesData extends StatelessWidget {
                     color: AColors.white,
                     borderRadius: BorderRadius.circular(100)
                   ),
-                    child: Image.asset(image, fit: BoxFit.fitHeight,)
+                    child: Image.asset(image, fit: BoxFit.fitHeight)
             ),
               SizedBox(height: 10),
               Container(

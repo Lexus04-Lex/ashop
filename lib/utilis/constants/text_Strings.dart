@@ -37,6 +37,7 @@ class ATexts {
   static const String sendVerificationEmail = "Reset";
   static const String success = "Continue";
   static const String viewAll = "View All";
+  static const String popularBrands = "Popular Brands";
   static const String forgotPassword = "Forgot Password?";
   static const String passwordResetToken = "Enter password reset token";
   static const String passwordReset = "Password Successfully reset";
@@ -73,6 +74,7 @@ class ATexts {
   static const String productDescription = "Description";
   static const String productReviews = "Reviews";
   static const String productSpecs = "Specifications";
+  static const String createdForYou = "Curated for you";
   static const String relatedProducts = "You might also like";
   static const String outOfStock = "Out of Stock";
   static const String inStock = "In Stock";

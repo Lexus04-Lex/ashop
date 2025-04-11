@@ -1,6 +1,5 @@
 import 'package:a_shop/utilis/devices/device_utility.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../../utilis/constants/size.dart';
 
 class AAppBar extends StatelessWidget implements PreferredSizeWidget{

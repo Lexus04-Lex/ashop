@@ -189,9 +189,9 @@ class RememberMe extends StatelessWidget {
         checkColor: dark ? AColors.primary : AColors.black,
     
         // This controls the background of the checkbox
-        fillColor: MaterialStateProperty.resolveWith<Color>(
+        fillColor: WidgetStateProperty.resolveWith<Color>(
               (states) {
-            if (states.contains(MaterialState.selected)) {
+            if (states.contains(WidgetState.selected)) {
               return dark ? AColors.black : AColors.primary;
             }
             return Colors.grey.shade300; // default for unselected
